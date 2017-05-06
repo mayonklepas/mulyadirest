@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mulyadirestman.FXMLDocumentController">
+    <children>
+      <VBox layoutY="8.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="turl" promptText="Set URL Here" />
+            <HBox prefHeight="0.0" prefWidth="476.0" spacing="10.0">
+               <children>
+                  <Button fx:id="baddvalue" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Add Value" />
+                  <Button fx:id="bremovevalue" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Remove Value" />
+               </children>
+            </HBox>
+            <TableView fx:id="tvheader" editable="true" prefHeight="267.0" prefWidth="476.0">
+              <columns>
+                <TableColumn fx:id="key" prefWidth="114.0" text="Key" />
+                <TableColumn fx:id="value" prefWidth="360.0" text="Value" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox prefHeight="0.0" prefWidth="476.0" spacing="10.0" />
+            <TextArea fx:id="tresult" prefHeight="200.0" prefWidth="200.0" promptText="Result" wrapText="true" />
+            <Button fx:id="bsend" mnemonicParsing="false" prefHeight="25.0" prefWidth="499.0" text="Send" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+         </padding></VBox>
+    </children>
+</AnchorPane>
