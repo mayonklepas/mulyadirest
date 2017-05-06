@@ -67,6 +67,7 @@ public class FXMLDocumentController implements Initializable {
         addvalue();
         setedittable();
         removevalue();
+        System.out.println("active");
     }
 
     private void setedittable() {
